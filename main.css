@@ -24,8 +24,10 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   border-width: 0;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 body {
@@ -243,6 +245,16 @@ main {
   }
 }
 
+@media (max-width: 767px) {
+  .section {
+    padding: 0 10px;
+  }
+
+  .section .article {
+    padding: 0;
+  }
+}
+
 .section .results {
   display: flex;
   justify-content: flex-start;
@@ -265,9 +277,15 @@ main {
   padding: 30px 40px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .content {
     padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding-top: 0;
   }
 }
 
